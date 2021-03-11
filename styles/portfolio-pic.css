@@ -1,0 +1,44 @@
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio__item:hover .portfolio__hovering-image {
+    visibility: visible;
+}
+
+.portfolio__image {
+    background-image: url(../images/pics/mask_2668.png);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+}
+
+.portfolio__hovering-image {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: rgba(241, 111, 111, .6);
+        height: 100%;
+        font-family: ArialMT;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #ffffff;
+        padding: 0 45px;
+    }
+
+    .portfolio__hovering-links {
+        display: flex;
+        position: absolute;
+        width: 130px;
+        justify-content: space-between;
+        bottom: 0;
+        margin-bottom: 40px;
+    }

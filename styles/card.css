@@ -1,0 +1,63 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card__hovering-image {
+    visibility: visible;
+}
+
+.card__image {
+    background-image: url(../images/pics/person.png);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 22px;
+    z-index: 2;
+}
+
+.card__hovering-image {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: rgba(241, 111, 111, .6);
+        height: 100%;
+        font-family: ArialMT;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.015em;
+        color: #ffffff;
+        padding: 0 45px;
+    }
+
+    .card__hovering-links {
+        display: flex;
+        position: absolute;
+        width: 130px;
+        justify-content: space-between;
+        bottom: 0;
+        margin-bottom: 40px;
+    }
+
+    .card__name {
+        font-family: VarelaRound;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        color: #385461;
+        margin-bottom: 8px;
+    }
+
+    .card__position {
+        font-family: ArialMT;
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.015em;
+        color: #909090;
+        margin-bottom: 37px;
+    }
